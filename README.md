@@ -27,7 +27,7 @@ These files are used to generate a live ELK deployment on Azure. They can be use
 
 ___
 
-##### Description of the Topology
+### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
