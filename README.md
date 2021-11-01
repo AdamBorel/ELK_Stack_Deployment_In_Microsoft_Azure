@@ -57,9 +57,9 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the JumpBox/Ansible VM machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
 
-- My personal Public IP Address
+- My local machines' Public IP Address (*45.51.99.176*)
 
-Machines within the network can only be accessed by the Jump Box.
+Machines within the network can only be accessed by the Jump Box:
 
 - Jump Box
   - Public IP Jump Box: (*13.68.184.182*)
@@ -84,9 +84,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-- ...
-- ...
+- Install docker (*Installs Docker code to the server selected*)
+- Install Python3-pip module (*Installs the pip module which deals with packet management*)
+- Install Docker Module (*Installs Docker modules for pip*)
+- Increase/USE more Memory (*Provides enough memory for the ELK server to run*)
+- Download and launch ELK container (*Downloads and launches the ELK container through specific ports*)
 
 The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
@@ -98,15 +100,20 @@ ___
 
 This ELK server is configured to monitor the following machines:
 
-- TODO: List the IP addresses of the machines you are monitoring
+- DVWA-1 (*10.0.0.5*)
+- DVWA-2 (*10.0.0.6*)
+- DVWA-3 (*10.0.0.7*)
 
 We have installed the following Beats on these machines:
 
-- TODO: Specify which Beats you successfully installed
+- DVWA-1 (*FileBeat & MetricBeat*)
+- DVWA-2 (*Filebeat & MetricBeat*)
+- DVWA-3 (*FileBeat & MetricBeat*)
 
 These Beats allow us to collect the following information from each machine:
 
-- TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+- Filebeat (*Collects log data*)
+- MetricBeat (*Collects data from system usage*)
 
 ___
 
@@ -116,8 +123,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the *ELK-Install.YML* file to the /etc/ansible/roles directory.
+- Update the hosts file to include the name and IP address of the server you wish to install ELK.
+>    ![ELK Hosts](/)
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 TODO: Answer the following questions to fill in the blanks:
