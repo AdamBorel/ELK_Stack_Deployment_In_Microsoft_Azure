@@ -1,44 +1,47 @@
-## Created by: Adam Borel
+# ELK Stack Deployment
 
-###### ![LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341/)
+___
 
----
+Created by: **Adam Borel**
 
-### Automated ELK Stack Deployment
+![LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341)
+
+___
 
 The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
 ![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
 These files are used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure. , such as Filebeat.
+>### ![Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
 
-![Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
 
-This document contains the following details:
+**This document contains the following details:**
 
 - Description of the Topology
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
+ - Access Policies
+ - ELK Configuration
+   - Beats in Use
+   - Machines Being Monitored
 - How to Use the Ansible Build
 
----
+___
 
-### Description of the Topology
+##### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.
 
-- TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+- Load balancers protect the availability of services by ensuring network traffic is distributed effectively. If one DVWA VM goes down the other two will pick up the slack.
+- A Jump Box is advantageous due to it's function as a gateway to private servers and services behind a Jump Box adds another level of security.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
-- TODO: What does Filebeat watch for?
-- TODO: What does Metricbeat record?
+- Filebeat searches specific log files and sends them to Elasticsearch for logging and review.
+- Metricbeat records the metrics from a servers' systems and services, then sends that data to Elasticsearch. 
 
-The configuration details of each machine may be found below:
+The configuration details of each machine can be found below:
 
 | Virtual Machines | Functions | IP Addresses | Operating Systems |
 |:-|:-|:-|:-:|
@@ -46,19 +49,21 @@ The configuration details of each machine may be found below:
 | (*Web 1*) (*Web 2*) (*Web 3*)     |    DVWA Webservers  | (*10.0.0.5*) (*10.0.0.6*) (*10.0.0.7*) | Linux: Ubuntu 18.04 <br> (*1 vCPU 2GB RAM*) |
 | ELK Stack                         | ElasticSearch Stack | 10.1.0.4                               | Linux: Ubuntu 18.04 <br> (*2 vCPU 8GB RAM*) |
 
----
+___
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
-Only the JumpBox/Ansible VM machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the JumpBox/Ansible VM machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
 
-- TODO: Add whitelisted IP addresses
+- My personal Public IP Address
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the Jump Box.
 
-- TODO: Which machine did you allow to access your ELK VM? What was its IP address?
+- Jump Box
+  - Public IP Jump Box: (*13.68.184.182*)
+  - Private IP Jump Box: (*10.0.0.4*)
 
 A summary of the access policies in place can be found in the table below:
 
@@ -67,15 +72,15 @@ A summary of the access policies in place can be found in the table below:
 | Jump Box VM                        | Yes - (*SSH Port 22*)                                       | (*Personal Public IP Address*)                |
 | VMs: (*Web 1*) (*Web 2*) (*Web 3*) | NO                                                          | (*Webserver Load Balancer Public IP Address*) |
 | Webserver Load Balancer            | Yes - (*HTTP Port 80*)                                      | Any                                           |
-| ELK Stack Log Monitoring           | Yes - ( *Kibana port:5601*) (*API calls on HTTP Port:9200*) | (*Kibana - Any*) (*HTTP API - 10.0.0.0/16*)   |
+| ELK Stack Log Monitoring           | Yes - ( *Kibana port:5601*) (*API calls on HTTP Port:9200*) | (*Kibana - Any*) (*HTTP API - 10.0.0.0/16*)   |---
 
----
+___
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-- TODO: What is the main advantage of automating configuration with Ansible?
+- We are able to repeat the process over and over again without errors that humans might introduce into the equation.
 
 The playbook implements the following tasks:
 
@@ -85,7 +90,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Docker ps Screenshot](https://1drv.ms/u/s!AjmBe7nEamR4mzJ-4p6ZtvEYQSZI)
+![Docker ps Screenshot]()
 
 ### Target Machines & Beats
 
