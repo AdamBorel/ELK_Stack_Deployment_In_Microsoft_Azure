@@ -1,17 +1,18 @@
 ## Created by: Adam Borel
 
-###### ![LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341/) 
+###### ![LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341/)
+
 ---
 
 ### Automated ELK Stack Deployment
 
 The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
-![Network Diagram] [Users/adamb/OneDrive/Desktop/Cyber Security/GitHub Repositories/ELK_Stack_Deployment_In_Microsoft_Azure/images/\{Adam_Borel\}_Project_1_Diagram_Sub_File.png]
+![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
 These files are used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure. , such as Filebeat.
 
-- TODO: Enter the playbook file.
+![Filebeat YAML Playbook]()
 
 This document contains the following details:
 
@@ -28,11 +29,11 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly accessible, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.
 
 - TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the ______ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
 - TODO: What does Filebeat watch for?
 - TODO: What does Metricbeat record?
