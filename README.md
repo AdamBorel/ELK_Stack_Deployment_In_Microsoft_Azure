@@ -84,11 +84,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- Install docker (*Installs Docker code to the server selected*)
-- Install Python3-pip module (*Installs the pip module which deals with packet management*)
-- Install Docker Module (*Installs Docker modules for pip*)
-- Increase/USE more Memory (*Provides enough memory for the ELK server to run*)
-- Download and launch ELK container (*Downloads and launches the ELK container through specific ports*)
+- `Install docker` (*Installs Docker code to the server selected*)
+- `Install Python3-pip module` (*Installs the pip module which deals with packet management*)
+- `Install Docker Module` (*Installs Docker modules for pip*)
+- `Increase/USE more Memory` (*Provides enough memory for the ELK server to run*)
+- `Download and launch ELK container` (*Downloads and launches the ELK container through specific ports*)
 
 The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
@@ -123,15 +123,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the *ELK-Install.YML* file to the /etc/ansible/roles directory.
-- Update the hosts file to include the name and IP address of the server you wish to install ELK.
->    ![ELK Hosts](/)
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
-TODO: Answer the following questions to fill in the blanks:
-
-- Which file is the playbook? Where do you copy it?
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-- Which URL do you navigate to in order to check that the ELK server is running?
-
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, *etc*.
+- Copy the `ELK-Install.YML` file to the `/etc/ansible/roles` directory.
+- Update the `hosts` file to include the name and IP address of the server you wish to install ELK on.
+  
+  >    ![ELK Hosts](/Images/ELK_Screenshot.png)
+- Run the playbook, and navigate to `http://[your_elk_server_ip]:5601/app/kibana` to check that the installation worked as expected.
