@@ -8,7 +8,7 @@ Created by: **Adam Borel**
 
 ___
 
-The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
+**The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:**
 
 ![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
@@ -19,10 +19,10 @@ These files are used to generate a live ELK deployment on Azure. They can be use
 **This document contains the following details:**
 
 - Description of the Topology
- - Access Policies
- - ELK Configuration
-   - Beats in Use
-   - Machines Being Monitored
+- Access Policies
+  - ELK Configuration
+  - Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 ___
@@ -41,7 +41,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Filebeat searches specific log files and sends them to Elasticsearch for logging and review.
 - Metricbeat records the metrics from a servers' systems and services, then sends that data to Elasticsearch. 
 
-The configuration details of each machine can be found below:
+**The configuration details of each machine can be found below:**
 
 | Virtual Machines | Functions | IP Addresses | Operating Systems |
 |:-|:-|:-|:-:|
@@ -65,12 +65,12 @@ Machines within the network can only be accessed by the Jump Box:
   - Public IP Jump Box: (*13.68.184.182*)
   - Private IP Jump Box: (*10.0.0.4*)
 
-A summary of the access policies in place can be found in the table below:
+**A summary of the access policies in place can be found in the table below:**
 
-| NAME | PUBLICLY ACCESSIBLE *(Y/N)* | ALLOWED IP ADDRESSES |
+| Name | Publicly Accessible? *(Y/N)* | Allowed IP Addresses |
 |:-|:-|:-|
-| Jump Box VM                        | Yes - (*SSH Port 22*)                                       | (*Personal Public IP Address*)                |
-| VMs: (*Web 1*) (*Web 2*) (*Web 3*) | NO                                                          | (*Webserver Load Balancer Public IP Address*) |
+| Jump Box VM                        | Yes - (*SSH Port 22*)                                       | My Local Machine's Public IP Address (*45.51.99.176*)                |
+| VMs: (*Web 1*) (*Web 2*) (*Web 3*) | NO                                                          | Webserver Load Balancer Public IP Address (*40.88.47.187*) |
 | Webserver Load Balancer            | Yes - (*HTTP Port 80*)                                      | Any                                           |
 | ELK Stack Log Monitoring           | Yes - ( *Kibana port:5601*) (*API calls on HTTP Port:9200*) | (*Kibana - Any*) (*HTTP API - 10.0.0.0/16*)   |---
 
