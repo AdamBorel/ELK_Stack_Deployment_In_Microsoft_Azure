@@ -88,9 +88,11 @@ The playbook implements the following tasks:
 - ...
 - ...
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
-![Docker ps Screenshot]()
+![Docker ps Screenshot](/Images/{Adam_Borel}_Project_1_Playbook_Sub_File.png)
+
+___
 
 ### Target Machines & Beats
 
@@ -105,6 +107,8 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 
 - TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+
+___
 
 ### Using the Playbook
 
