@@ -7,7 +7,7 @@
 
 The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
-![Network Diagram] [./Users/adamb/OneDrive/Desktop/Cyber Security/GitHub Repositories/ELK_Stack_Deployment_In_Microsoft_Azure/images/{Adam_Borel}_Project_1_Diagram_Sub_File.png]
+![Network Diagram] [Users/adamb/OneDrive/Desktop/Cyber Security/GitHub Repositories/ELK_Stack_Deployment_In_Microsoft_Azure/images/{Adam_Borel}_Project_1_Diagram_Sub_File.png]
 
 These files are used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure. , such as Filebeat.
 
