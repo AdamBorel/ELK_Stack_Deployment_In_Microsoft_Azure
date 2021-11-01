@@ -12,7 +12,7 @@ ___
 
 ![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
-These files are used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure. , such as Filebeat.
+These files are used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat.
 >### ![Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
 
 
