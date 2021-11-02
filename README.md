@@ -16,13 +16,13 @@ These files are used to generate a live ELK deployment on Azure. They can be use
 
 ### Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat.
 
->##### [Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
+>##### [Filebeat YAML Playbook](/Ansible/Filebeat-PlayBook.yml)
 
->##### [MetricBeat YAML Playbook](Ansible/MetricBeat-Playbook.yml)
+>##### [MetricBeat YAML Playbook](/Ansible/MetricBeat-Playbook.yml)
 
->##### [DVWA YAML Playbook](Ansible/DVWA-PlayBook.yml)
+>##### [DVWA YAML Playbook](/Ansible/DVWA-PlayBook.yml)
 
->##### [Install ELK YAML Playbook](Ansible/InstallELK-PlayBook.yml)
+>##### [Install ELK YAML Playbook](/Ansible/InstallELK-PlayBook.yml)
 
 ### This document contains the following details:
 
