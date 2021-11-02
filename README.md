@@ -14,14 +14,14 @@ ___
 
 These files are used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
 
-Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat.
->### [Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
->### [MetricBeat YAML Playbook](Ansible/MetricBeat-Playbook.yml)
->### [DVWA YAML Playbook](Ansible/DVWA-PlayBook.yml)
->### [Install ELK YAML Playbook](Ansible/InstallELK-PlayBook.yml)
+### Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat.
+>#### ![Filebeat YAML Playbook](Ansible/Filebeat-PlayBook.yml)
+>#### ![MetricBeat YAML Playbook](Ansible/MetricBeat-Playbook.yml)
+>#### ![DVWA YAML Playbook](Ansible/DVWA-PlayBook.yml)
+>#### ![Install ELK YAML Playbook](Ansible/InstallELK-PlayBook.yml)
 
 
-**This document contains the following details:**
+### This document contains the following details:
 
 - Description of the Topology
 - Access Policies
@@ -32,7 +32,7 @@ Accessible below, select portions of the YAML Playbook files, which can be used 
 
 ___
 
-### Description of the Topology
+## Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
@@ -56,7 +56,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 ___
 
-### Access Policies
+## Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
@@ -70,7 +70,7 @@ Machines within the network can only be accessed by the Jump Box:
   - Public IP Jump Box: (*13.68.184.182*)
   - Private IP Jump Box: (*10.0.0.4*)
 
-**A summary of the access policies in place can be found in the table below:**
+### A summary of the access policies in place can be found in the table below:
 
 | Name | Publicly Accessible? *(Y/N)* | Allowed IP Addresses |
 |:-|:-|:-|
@@ -81,13 +81,13 @@ Machines within the network can only be accessed by the Jump Box:
 
 ___
 
-### Elk Configuration
+## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 - We are able to repeat the process over and over again without errors that humans might introduce into the equation.
 
-The playbook implements the following tasks:
+### The playbook implements the following tasks:
 
 - `Install docker` (*Installs Docker code to the server selected*)
 - `Install Python3-pip module` (*Installs the pip module which deals with packet management*)
@@ -95,13 +95,13 @@ The playbook implements the following tasks:
 - `Increase/USE more Memory` (*Provides enough memory for the ELK server to run*)
 - `Download and launch ELK container` (*Downloads and launches the ELK container through specific ports*)
 
-The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
+### The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
 ![Docker ps Screenshot](/Images/{Adam_Borel}_Project_1_Playbook_Sub_File.png)
 
 ___
 
-### Target Machines & Beats
+## Target Machines & Beats
 
 This ELK server is configured to monitor the following machines:
 
@@ -122,7 +122,7 @@ These Beats allow us to collect the following information from each machine:
 
 ___
 
-### Using the Playbook
+## Using the Playbook
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
