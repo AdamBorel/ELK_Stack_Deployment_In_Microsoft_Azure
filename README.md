@@ -1,7 +1,4 @@
 # ELK Stack Deployment
-
-___
-
 ## Created by: Adam Borel
 
 [LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341/)
