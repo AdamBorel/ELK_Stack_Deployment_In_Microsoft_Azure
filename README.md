@@ -4,7 +4,7 @@ ___
 
 Created by: **Adam Borel**
 
-![LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341)
+[LinkedIn Profile](https://www.linkedin.com/in/adam-borel-56147341/)
 
 ___
 
@@ -14,15 +14,15 @@ ___
 
 These files are used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
 
-### Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat.
+### Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat\.
 
->##### [Filebeat YAML Playbook](/Ansible/Filebeat-PlayBook.yml)
+>##### [Filebeat YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/Filebeat-PlayBook.yml)
 
->##### [MetricBeat YAML Playbook](/Ansible/MetricBeat-Playbook.yml)
+>##### [MetricBeat YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/MetricBeat-PlayBook.yml)
 
->##### [DVWA YAML Playbook](/Ansible/DVWA-PlayBook.yml)
+>##### [DVWA YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/DVWA_YAML_Playbook)
 
->##### [Install ELK YAML Playbook](/Ansible/InstallELK-PlayBook.yml)
+>##### [Install ELK YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/InstallELK-PlayBook.yml)
 
 ### This document contains the following details:
 
@@ -37,12 +37,12 @@ ___
 
 ## Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA. (Damn Vulnerable Web Application)
 
 Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.
 
 - Load balancers protect the availability of services by ensuring network traffic is distributed effectively. If one DVWA VM goes down the other two will pick up the slack.
-- A Jump Box is advantageous due to it's function as a gateway to private servers and services behind a Jump Box adds another level of security.
+- A Jump Box is advantageous due to it's function as a gateway to private servers and services behind a Jump Box it also adds another level of security.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
@@ -88,7 +88,7 @@ ___
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-- We are able to repeat the process over and over again without errors that humans might introduce into the equation.
+- We're able to repeat the process over and over again without errors that humans might introduce into the procedure of doing the same task over and over again, that's what we have machines for people!
 
 ### The playbook implements the following tasks:
 
@@ -100,7 +100,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 ### The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
-![Docker ps Screenshot](/Images/{Adam_Borel}_Project_1_Playbook_Sub_File.png)
+[Docker ps Screenshot](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Images/%7BAdam_Borel%7D_Project_1_Playbook_Sub_File.png)
 
 ___
 
@@ -127,12 +127,10 @@ ___
 
 ## Using the Playbook
 
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
-
-SSH into the control node and follow the steps below:
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned, SSH into the control node and follow the steps below:
 
 - Copy the `ELK-Install.YML` file to the `/etc/ansible/roles` directory.
 - Update the `hosts` file to include the name and IP address of the server you wish to install ELK on.
   
-  >    ![ELK Hosts](/Images/ELK_Screenshot.png)
+  >    [ELK Hosts](/Images/ELK_Screenshot.png)
 - Run the playbook, and navigate to `http://[your_elk_server_ip]:5601/app/kibana` to check that the installation worked as expected.
