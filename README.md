@@ -24,7 +24,7 @@ Accessible below, select portions of the YAML Playbook files, which can be used 
 >
 >[**Install ELK YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/InstallELK-PlayBook.yml)
 
-## This document contains the following details\:
+## This document contains the following details:
 
 - Description of the Topology
 - Access Policies
