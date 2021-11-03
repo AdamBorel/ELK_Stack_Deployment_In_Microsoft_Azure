@@ -16,15 +16,15 @@ These files are used to generate a live ELK deployment on Azure. They can be use
 
 Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat\.
 
->##### [Filebeat YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/Filebeat-PlayBook.yml)
+>[**Filebeat YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/Filebeat-PlayBook.yml)
+>
+>[**MetricBeat YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/MetricBeat-PlayBook.yml)
+>
+>[**DVWA YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/DVWA_YAML_Playbook)
+>
+>[**Install ELK YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/InstallELK-PlayBook.yml)
 
->##### [MetricBeat YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/MetricBeat-PlayBook.yml)
-
->##### [DVWA YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/DVWA_YAML_Playbook)
-
->##### [Install ELK YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/InstallELK-PlayBook.yml)
-
-### This document contains the following details:
+## This document contains the following details\:
 
 - Description of the Topology
 - Access Policies
