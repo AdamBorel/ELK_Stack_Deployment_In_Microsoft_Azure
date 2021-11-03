@@ -100,7 +100,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 ### The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
-[Docker ps Screenshot](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Images/%7BAdam_Borel%7D_Project_1_Playbook_Sub_File.png)
+![Docker ps Screenshot](/Images/{Adam_Borel}_Project_1_Playbook_Sub_File.png)
 
 ___
 
