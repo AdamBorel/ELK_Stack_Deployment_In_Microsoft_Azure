@@ -8,7 +8,7 @@ Created by: **Adam Borel**
 
 ___
 
-**The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:**
+### The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
 ![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
