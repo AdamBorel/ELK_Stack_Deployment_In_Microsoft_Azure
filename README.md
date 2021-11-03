@@ -132,5 +132,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 - Copy the `ELK-Install.YML` file to the `/etc/ansible/roles` directory.
 - Update the `hosts` file to include the name and IP address of the server you wish to install ELK on.
   
-  >    [ELK Hosts](/Images/ELK_Screenshot.png)
+  >    ![ELK Hosts](/Images/ELK_Screenshot.png)
 - Run the playbook, and navigate to `http://[your_elk_server_ip]:5601/app/kibana` to check that the installation worked as expected.
