@@ -8,13 +8,13 @@ Created by: **Adam Borel**
 
 ___
 
-### The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
+The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
 ![Network Diagram](Images/{Adam_Borel}_Project_1_Diagram_Sub_File.png)
 
 These files are used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above.
 
-### Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat\.
+Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat\.
 
 >##### [Filebeat YAML Playbook](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/Filebeat-PlayBook.yml)
 
@@ -49,7 +49,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Filebeat searches specific log files and sends them to Elasticsearch for logging and review.
 - Metricbeat records the metrics from a servers' systems and services, then sends that data to Elasticsearch.
 
-**The configuration details of each machine can be found below:**
+The configuration details of each machine can be found below:
 
 | Virtual Machines | Functions | IP Addresses | Operating Systems |
 |:-|:-|:-|:-:|
@@ -73,7 +73,7 @@ Machines within the network can only be accessed by the Jump Box:
   - Public IP Jump Box: (*13.68.184.182*)
   - Private IP Jump Box: (*10.0.0.4*)
 
-### A summary of the access policies in place can be found in the table below:
+A summary of the access policies in place can be found in the table below:
 
 | Name | Publicly Accessible? *(Y/N)* | Allowed IP Addresses |
 |:-|:-|:-|
@@ -90,7 +90,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 - We're able to repeat the process over and over again without errors that humans might introduce into the procedure of doing the same task over and over again, that's what we have machines for people!
 
-### The playbook implements the following tasks:
+The playbook implements the following tasks:
 
 - `Install docker` (*Installs Docker code to the server selected*)
 - `Install Python3-pip module` (*Installs the pip module which deals with packet management*)
@@ -98,7 +98,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - `Increase/USE more Memory` (*Provides enough memory for the ELK server to run*)
 - `Download and launch ELK container` (*Downloads and launches the ELK container through specific ports*)
 
-### The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
+The screenshot below displays the result of running `docker ps` after successfully configuring the ELK instance:
 
 ![Docker ps Screenshot](/Images/{Adam_Borel}_Project_1_Playbook_Sub_File.png)
 
