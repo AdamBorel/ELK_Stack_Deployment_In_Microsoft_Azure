@@ -11,7 +11,7 @@ The files in this repository were used to configure a cloud based network, depic
 
 These files are used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment.
 
-Accessible below, select portions of the YAML Playbook files, which can be used to install only certain pieces the ELK stack in Azure, such as Filebeat\.
+Accessible below are select portions of the YAML Playbook files, which can be used to install only certain pieces of the ELK stack in Azure, such as Filebeat\.
 
 >[**Filebeat YAML Playbook**](https://github.com/AdamBorel/ELK_Stack_Deployment_In_Microsoft_Azure/blob/main/Ansible/Filebeat-PlayBook.yml)
 >
