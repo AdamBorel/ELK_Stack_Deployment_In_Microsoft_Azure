@@ -7,7 +7,7 @@ ___
 
 The files in this repository were used to configure a cloud based network, depicted visually in this diagram below:
 
-![Network Diagram](Images/IMG_3086.CR2)
+![Network Diagram](/Images/week_12_hw_network_diagram_final_fixed.png)
 
 These files are used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment.
 
